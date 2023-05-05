@@ -33,16 +33,10 @@ public class FindPivotIndex_724 {
         int sumOfAllDigits = 0;
         int sumOfLeftDigits = 0;
 
-
-         for (int i = 0; i < nums.length; i++) {
-
-            sumOfAllDigits += nums[i];
-
-         }
+         for (int i = 0; i < nums.length; i++) {sumOfAllDigits += nums[i];}
 
         for (int i = 0; i < nums.length; i++) {
              sumOfAllDigits -= nums[i];
-            System.out.println(sumOfAllDigits +"->"+ sumOfLeftDigits);
             if (sumOfLeftDigits == sumOfAllDigits) return i;
             sumOfLeftDigits += nums[i];
         }
