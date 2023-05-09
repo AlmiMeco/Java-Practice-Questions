@@ -32,6 +32,9 @@ public class IsSubsequence_392 {
 
     }
 
+    /** THIS SOLUTION ONLY FINDS OUT IF 't' IS A VALID SUBSEQUENCE 's'
+        -> ALL CHAR OF: 's' MUST BE INCLUDED IN: 't'
+            -> THIS SOLUTION DOES NOT ACCOUNT FOR INSERTION ORDER**/
 
     public static void main(String[] args) {
 
