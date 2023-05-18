@@ -38,7 +38,7 @@ public class ValidAnagram_242 {
 
         String s = "dog";
         String t = "good";
-
+        
         System.out.println(isAnagram(s, t));
 
 
