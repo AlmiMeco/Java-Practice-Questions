@@ -20,16 +20,10 @@ public class SumOfDigits_258 {
         int z = 0;
 
 
-
         for (int i = 0; i < nStr.length(); i++) {
             z += Character.getNumericValue(nStr.charAt(i));
 
         }
-
-//        if (z < 10) return z;
-//        else singleDigitFrmSum(z);
-//
-//        return 0;
 
         return singleDigitFrmSum(z);
 
