@@ -1,5 +1,9 @@
 package heap;
 
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.PriorityQueue;
+
 public class KthLargestElementArray_215 {
 
 
@@ -18,18 +22,20 @@ public class KthLargestElementArray_215 {
 
     private static int kthLargestElemOfArray(int[] array, int k){
 
-        MyHeap myHeap = new MyHeap(array.length);
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 
         for (int i = 0; i < array.length; i++) {
-            myHeap.insert(array[i]);
+            pq.add(array[i]);
         }
 
         for (int i = 0; i < k - 1; i++) {
-            myHeap.remove();
+            pq.remove();
         }
 
+        System.out.println(pq);
 
-        return myHeap.peek();
+
+        return pq.peek();
     }
 
 
@@ -43,6 +49,7 @@ public class KthLargestElementArray_215 {
         int[] ints = {3, 2, 1, 5, 6, 4};
 
         System.out.println(kthLargestElemOfArray(ints, 2));
+//        kthLargestElemOfArray(ints, 2);
 
     }
 
