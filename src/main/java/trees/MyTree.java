@@ -1,6 +1,7 @@
 package trees;
 
 public class MyTree {
+
     TreeNode root;
 
 
