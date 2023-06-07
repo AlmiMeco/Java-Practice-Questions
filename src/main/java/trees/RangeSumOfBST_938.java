@@ -29,7 +29,18 @@ public class RangeSumOfBST_938 {
 
     public static void main(String[] args) {
 
-        System.out.println(sumOfBSTRange(new TreeNode(10), 7, 15));
+
+         TreeNode treeNode = new TreeNode(10);
+
+         treeNode.left = new TreeNode(5);
+         treeNode.left.left = new TreeNode(3);
+         treeNode.left.right = new TreeNode(7);
+
+         treeNode.right = new TreeNode(15);
+         treeNode.right.right = new TreeNode(18);
+
+
+        System.out.println(sumOfBSTRange(treeNode, 7, 15));
 
 
     }
